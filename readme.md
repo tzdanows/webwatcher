@@ -49,7 +49,7 @@ to setup AWS S3 + Lambda to run webwatcher on your urls, you should:
     (on your local pc)
     * install dependencies via:
     ```bash
-    # make a new folder & cd into it
+    # make a new folder(if necessary) & cd into it
     mkdir lambda_function
     cd lambda_function
     # move your code & requirements.txt into the folder
