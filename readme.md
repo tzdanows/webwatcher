@@ -13,7 +13,7 @@ This project is a 24/7 monitor for website changes. It periodically checks speci
 * aws account
 * twilio account
 
-### twilio phone requirements
+### twilio phone requirements (configure and test with twiliotest.py before moving further)
 * twilio account sid
 * twilio phone number
 * twilio api key
@@ -63,7 +63,7 @@ to setup AWS S3 + Lambda to run webwatcher on your urls, you should:
     * you should now be able to test your function and run it assuming everything is correctly configured
     * refer to cloudwatch log groups for debugging alongside checking the contents of the S3 bucket
 
-## options I considered:
+## other options / details:
 * lambda_function.py
     * set up an aws lambda function
     * create an aws S3 bucket
@@ -72,8 +72,12 @@ to setup AWS S3 + Lambda to run webwatcher on your urls, you should:
 * gcf.py
     * set up a google cloud function
     * not yet explored..
-* cron job approach (as shown by webwatcher.py)
+* cron job approach (webwatcher.py)
     * explored but deemed too much work
+* python only (webwatcherloop.py, requires .env file)
+    * not a viable solution
+* twilio test (twiliotest.py)
+    * helpful for ensuring twilio api is working
 
 ## resources:
 * https://docs.aws.amazon.com/lambda/
