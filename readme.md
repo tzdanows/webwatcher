@@ -85,3 +85,4 @@ to setup AWS S3 + Lambda to run webwatcher on your urls, you should:
 * https://www.crummy.com/software/BeautifulSoup/bs4/doc/
 * https://www.twilio.com/docs/libraries/python
 * https://www.twilio.com/docs/messaging/quickstart
+* ENV change reference: https://<AWS-REGION>.console.aws.amazon.com/lambda/home?region=<AWS-REGION>#/functions/<PROJECT_NAME>?subtab=envVars&tab=configure)
